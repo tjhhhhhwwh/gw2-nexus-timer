@@ -1,0 +1,44 @@
+name: Publish v0.1.1 prerelease
+
+on:
+  push:
+    tags: [v0.1.1]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Test and build Windows x64 DLL
+        run: |
+          cmake -S . -B build/core -DCMAKE_BUILD_TYPE=Release
+          cmake --build build/core --parallel
+          ctest --test-dir build/core --output-on-failure
+          python3 tools/build-cross.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: windows-x64-release
+          path: dist/gw2_nexus_timer.dll
+          if-no-files-found: error
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: windows-x64-release
+          path: dist
+      - name: Publish DLL
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >-
+          gh release create v0.1.1 dist/gw2_nexus_timer.dll --verify-tag --prerelease
+          --title '世界计时 v0.1.1' --notes-file docs/RELEASE_v0.1.1.md

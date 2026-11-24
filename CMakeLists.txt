@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(gw2_nexus_timer VERSION 0.1.0 LANGUAGES CXX)
+project(gw2_nexus_timer VERSION 0.1.1 LANGUAGES CXX)
 set(GW2_TIMER_GITHUB_REPOSITORY "tjhhhhhwwh/gw2-nexus-timer" CACHE STRING "Optional owner/repository for Nexus GitHub Releases updates")
 if(GW2_TIMER_GITHUB_REPOSITORY AND NOT GW2_TIMER_GITHUB_REPOSITORY MATCHES "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
     message(FATAL_ERROR "GW2_TIMER_GITHUB_REPOSITORY must be owner/repository")

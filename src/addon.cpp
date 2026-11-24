@@ -15,8 +15,9 @@
 #include <unordered_map>
 
 namespace {
-constexpr char kWindowCN[] = u8"世界计时 · 世界BOSS###GW2NexusTimer";
-constexpr char kWindowEN[] = "World Timer - World Bosses###GW2NexusTimer";
+// Use a fresh layout ID so widths saved by the previous release do not carry over.
+constexpr char kWindowCN[] = u8"世界计时 · 世界BOSS###GW2NexusTimerCompact";
+constexpr char kWindowEN[] = "World Timer - World Bosses###GW2NexusTimerCompact";
 constexpr char kBind[] = "GW2_NEXUS_TIMER_TOGGLE";
 constexpr char kFontId[] = "GW2_NEXUS_TIMER_CHINESE";
 AddonAPI_t* api = nullptr;
@@ -112,7 +113,7 @@ void Render() {
     ImFont* font = chinese_font.load();
     if (font) ImGui::PushFont(font);
     bool open = visible.load();
-    ImGui::SetNextWindowSize(ImVec2(780, 560), ImGuiCond_FirstUseEver);
+    ImGui::SetNextWindowSize(ImVec2(600, 560), ImGuiCond_FirstUseEver);
     if (ImGui::Begin(language == world_timer::Language::CN ? kWindowCN : kWindowEN, &open)) {
         const auto now = Now();
         LanguageSelector();
@@ -137,9 +138,9 @@ void Render() {
         ImGui::BeginChild("bosses", ImVec2(0, -footer), false);
         if (ImGui::BeginTable("schedule", 3, ImGuiTableFlags_RowBg | ImGuiTableFlags_BordersInnerH
                                           | ImGuiTableFlags_Resizable)) {
-            ImGui::TableSetupColumn(T(u8"刷新 / 倒计时", "Next / countdown"), ImGuiTableColumnFlags_WidthFixed, 140);
+            ImGui::TableSetupColumn(T(u8"刷新 / 倒计时", "Next spawn"), ImGuiTableColumnFlags_WidthFixed, 110);
             ImGui::TableSetupColumn(T(u8"世界BOSS / 地图", "World boss / map"));
-            ImGui::TableSetupColumn(T(u8"操作", "Action"), ImGuiTableColumnFlags_WidthFixed, 190);
+            ImGui::TableSetupColumn(T(u8"操作", "Action"), ImGuiTableColumnFlags_WidthFixed, 140);
             ImGui::TableHeadersRow();
             for (const auto& row : upcoming) {
                 const auto& boss = *row.boss;
@@ -179,9 +180,12 @@ void Render() {
                 ImGui::TextDisabled("%s", world_timer::MapName(boss, language).c_str());
                 ImGui::EndGroup();
                 ImGui::TableNextColumn();
-                if (ImGui::Button(T(u8"复制名称与传送点###copy", "Copy name & waypoint###copy"))) {
+                if (ImGui::Button(T(u8"复制传送点###copy", "Copy waypoint###copy"), ImVec2(132.0f, 30.0f))) {
                     feedback = CopyUnicodeText(world_timer::CopyText(row, now, language)) ? 1 : 2;
                     feedback_until = std::chrono::steady_clock::now() + std::chrono::seconds(4);
+                }
+                if (ImGui::IsItemHovered()) {
+                    ImGui::SetTooltip("%s", T(u8"复制名称与传送点", "Copy name & waypoint"));
                 }
                 ImGui::PopID();
             }
@@ -204,7 +208,7 @@ void Render() {
 void Options() {
     ImFont* font = chinese_font.load();
     if (font) ImGui::PushFont(font);
-    ImGui::TextUnformatted(T(u8"世界计时 · 世界BOSS v0.1.0", "World Timer - World Bosses v0.1.0"));
+    ImGui::TextUnformatted(T(u8"世界计时 · 世界BOSS v0.1.1", "World Timer - World Bosses v0.1.1"));
     LanguageSelector();
     bool show = visible.load();
     if (ImGui::Checkbox(T(u8"显示世界计时###show", "Show world timer###show"), &show)) visible.store(show);
@@ -226,7 +230,7 @@ void Load(AddonAPI_t* supplied) {
     api->GUI_Register(RT_Render, Render);
     api->GUI_Register(RT_OptionsRender, Options);
     api->InputBinds_RegisterWithString(kBind, Toggle, "CTRL+SHIFT+T");
-    api->Log(LOGL_INFO, "GW2 Nexus Timer", "World boss timer v0.1.0 loaded.");
+    api->Log(LOGL_INFO, "GW2 Nexus Timer", "World boss timer v0.1.1 loaded.");
 }
 
 void Unload() {
@@ -247,7 +251,7 @@ extern "C" __declspec(dllexport) AddonDefinition_t* GetAddonDef() {
     definition.Signature = static_cast<std::uint32_t>(-191016601);
     definition.APIVersion = NEXUS_API_VERSION;
     definition.Name = "GW2 World Timer";
-    definition.Version = {0, 1, 0, 0};
+    definition.Version = {0, 1, 1, 0};
     definition.Author = "iamapsycho";
     definition.Description = "World boss schedules and waypoint copy (CN/EN, UTC+8).";
     definition.Load = Load;
