@@ -10,6 +10,7 @@ GitHub / Releases：https://github.com/tjhhhhhwwh/gw2-nexus-timer
 
 - CN / EN 界面切换，首领名、地图名、日期提示和复制文本同步切换，记住语言选择。
 - 悬浮面板按下次计划刷新时间排序，实时显示倒计时。
+- 名称旁显示 BOSS 缩略图，保持图片比例；24张小程序原图已复制到 `assets/bosses/` 并嵌入 DLL，运行时不请求图片链接，也不需要另外安装图片目录。
 - 点击首领名称展开全天时刻；支持按名称、地图筛选。
 - 一键复制「名称 · 今天/明天 HH:mm · 地图 传送点代码」。由玩家粘贴到游戏聊天框。
 - `Ctrl+Shift+T` 显示或隐藏；可在 Nexus 快捷键管理里修改，也可从插件选项重新打开面板。
@@ -27,7 +28,7 @@ GitHub / Releases：https://github.com/tjhhhhhwwh/gw2-nexus-timer
 
 ## Windows 构建
 
-安装 Visual Studio 2022 的「使用 C++ 的桌面开发」（含 Windows SDK）及 CMake 3.20+。
+安装 Visual Studio 2022 的「使用 C++ 的桌面开发」（含 Windows SDK）、CMake 3.20+ 和 Python 3。
 依赖已随仓库固定保存，不需要额外从 GitHub 下载子模块。
 
 在仓库目录运行 PowerShell：
@@ -87,7 +88,7 @@ c++ -std=c++17 -Wall -Wextra -Wpedantic -Isrc src/schedule.cpp tests/schedule_te
 /tmp/gw2-timer-tests
 ```
 
-测试覆盖 UTC+8、跨午夜、恰好刷新时刻、排序、中文复制文本以及完整24项数据。
+测试覆盖 UTC+8、跨午夜、恰好刷新时刻、排序、双语复制文本、完整24项数据，以及本地 JPEG 完整性和嵌入图片逐字节一致性。
 
 ### 可选：交叉编译 Windows DLL
 
@@ -136,6 +137,7 @@ Nexus 按 Release 标签比较版本，并选择 DLL 资产；该仓库每个 Re
 
 - 确认国服客户端能加载 Nexus 和该插件，检查是否出现日志错误。
 - 检查中文名称、全天时刻、窗口收起与重新打开、修改快捷键。
+- 断网检查24个名称旁的缩略图；图片应保持比例，加载期间名称和复制按钮仍可使用。
 - 检查 CN / EN 切换、英文名称/地图/复制文本，以及重启后语言选择。
 - 在午夜前后检查「今天/明天」和下次刷新；切换电脑显示时区后结果应仍是北京时间。
 - 点击复制后手动粘贴到游戏聊天框，检查中文和传送点代码。

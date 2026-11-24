@@ -3,13 +3,16 @@
 #include "imgui.h"
 #include "schedule.h"
 #include "clipboard_win.h"
+#include "boss_images.generated.h"
 
 #include <atomic>
+#include <algorithm>
 #include <chrono>
 #include <filesystem>
 #include <fstream>
 #include <string>
 #include <vector>
+#include <unordered_map>
 
 namespace {
 constexpr char kWindowCN[] = u8"世界计时 · 世界BOSS###GW2NexusTimer";
@@ -26,6 +29,16 @@ int feedback = 0;
 world_timer::Language language = world_timer::Language::CN;
 std::filesystem::path settings_path;
 std::chrono::steady_clock::time_point feedback_until;
+std::unordered_map<std::string, std::string> boss_texture_keys;
+
+void LoadBossImages() {
+    for (const auto& image : world_timer::kBossImages) {
+        auto& key = boss_texture_keys[image.id];
+        key = "GW2_TIMER_BOSS_" + std::string(image.id);
+        // Nexus decodes the bytes synchronously and owns the resulting texture.
+        api->Textures_GetOrCreateFromMemory(key.c_str(), const_cast<unsigned char*>(image.data), image.size);
+    }
+}
 
 const char* T(const char* cn, const char* en) {
     return language == world_timer::Language::CN ? cn : en;
@@ -142,6 +155,19 @@ void Render() {
                 const auto color = remaining <= 900 ? ImVec4(1, 0.75f, 0.25f, 1) : ImVec4(0.7f, 0.8f, 0.85f, 1);
                 ImGui::TextColored(color, "%s", world_timer::Countdown(remaining).c_str());
                 ImGui::TableNextColumn();
+                const auto picture_pos = ImGui::GetCursorScreenPos();
+                ImGui::Dummy(ImVec2(48.0f, 48.0f));
+                if (auto* picture = api->Textures_Get(boss_texture_keys.at(boss.id).c_str());
+                    picture && picture->Resource && picture->Width && picture->Height) {
+                    const float scale = 48.0f / static_cast<float>(std::max(picture->Width, picture->Height));
+                    const ImVec2 size(picture->Width * scale, picture->Height * scale);
+                    const ImVec2 start(picture_pos.x + (48.0f - size.x) * 0.5f,
+                                       picture_pos.y + (48.0f - size.y) * 0.5f);
+                    ImGui::GetWindowDrawList()->AddImage(picture->Resource, start,
+                        ImVec2(start.x + size.x, start.y + size.y));
+                }
+                ImGui::SameLine();
+                ImGui::BeginGroup();
                 if (ImGui::TreeNode("daily", "%s", world_timer::BossName(boss, language).c_str())) {
                     ImGui::TextDisabled("%s", T(u8"全天时刻（北京时间）", "Daily schedule (UTC+8)"));
                     for (std::size_t i = 0; i < boss.minutes.size(); ++i) {
@@ -151,6 +177,7 @@ void Render() {
                     ImGui::TreePop();
                 }
                 ImGui::TextDisabled("%s", world_timer::MapName(boss, language).c_str());
+                ImGui::EndGroup();
                 ImGui::TableNextColumn();
                 if (ImGui::Button(T(u8"复制名称与传送点###copy", "Copy name & waypoint###copy"))) {
                     feedback = CopyUnicodeText(world_timer::CopyText(row, now, language)) ? 1 : 2;
@@ -195,6 +222,7 @@ void Load(AddonAPI_t* supplied) {
     visible.store(true);
     ReadLanguage();
     LoadChineseFont();
+    LoadBossImages();
     api->GUI_Register(RT_Render, Render);
     api->GUI_Register(RT_OptionsRender, Options);
     api->InputBinds_RegisterWithString(kBind, Toggle, "CTRL+SHIFT+T");
@@ -207,6 +235,7 @@ void Unload() {
     api->InputBinds_Deregister(kBind);
     if (font_requested) api->Fonts_Release(kFontId, ReceiveFont);
     chinese_font.store(nullptr);
+    boss_texture_keys.clear();
     nexus = nullptr;
     api = nullptr;
 }

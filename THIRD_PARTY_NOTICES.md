@@ -27,7 +27,8 @@ https://github.com/RaidcoreGG/Nexus-Template-cpp
 - 导入日期：2026-11-24。
 - 内容：24项首领/大型事件，246个每日时刻；名称、地图、区域和传送点代码。
 - 数据保存为 `data/bosses.json`；生成的 C++ 位于 `src/boss_data.generated.h`。
-- 不包含小程序中的配图、COS访问配置或密钥。
+- 小程序的24张 BOSS 原图已复制到 `assets/bosses/b01.jpg` 至 `b24.jpg`，与其资产清单中的 `boss01.jpg` 至 `boss24.jpg` 逐字节一致（总计750,516字节）。
+- 图片在构建时嵌入 DLL，不保留运行时图片链接；不包含 COS 访问配置或密钥。
 - 本次只是复用原数据，没有逐项重新核验游戏内时刻，也不额外授予游戏素材或上游数据的权利。
 
 中文字体使用玩家 Windows 安装中的字体，通过 Nexus 字体服务加载；仓库不分发字体文件。
