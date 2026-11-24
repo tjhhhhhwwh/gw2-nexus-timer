@@ -1,0 +1,31 @@
+name: Prepare release draft
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  draft:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate schedule data
+        run: python tools/generate_data.py --check
+      - name: Build and test
+        shell: pwsh
+        run: ./tools/build-windows.ps1
+      - name: Draft v0.1.0
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v0.1.0
+          target_commitish: ${{ github.sha }}
+          name: 世界计时 v0.1.0
+          body_path: docs/RELEASE_v0.1.0.md
+          draft: true
+          prerelease: true
+          files: dist/gw2_nexus_timer.dll

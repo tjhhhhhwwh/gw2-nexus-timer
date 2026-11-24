@@ -1,0 +1,8 @@
+/build/
+/dist/
+/.vs/
+/.idea/
+/.DS_Store
+*.user
+*.suo
+__pycache__/
