@@ -8,7 +8,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class BossAssetsTest(unittest.TestCase):
     def test_every_boss_has_a_local_jpeg(self):
-        bosses = json.loads((ROOT / "data/bosses.json").read_text())["bosses"]
+        bosses = json.loads((ROOT / "data/bosses.json").read_text(encoding="utf-8"))["bosses"]
         for boss in bosses:
             with self.subTest(boss=boss["id"]):
                 path = ROOT / "assets/bosses" / (boss["id"] + ".jpg")

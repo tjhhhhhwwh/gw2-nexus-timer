@@ -21,5 +21,14 @@ int main(int argc, char** argv) {
             return 1;
         }
     }
-    std::cout << "PASS: every embedded boss picture matches its copied JPEG byte for byte\n";
+    const auto code_path = std::filesystem::path(argv[1]) / "assets/miniapp/entry.jpg";
+    std::ifstream code_file(code_path, std::ios::binary);
+    const std::vector<unsigned char> code{std::istreambuf_iterator<char>(code_file), {}};
+    const auto& embedded = world_timer::kMiniAppCode;
+    if (!code_file || code.empty() || embedded.size != code.size()
+        || !std::equal(code.begin(), code.end(), embedded.data)) {
+        std::cerr << "FAIL: embedded mini-program code differs from the supplied JPEG\n";
+        return 1;
+    }
+    std::cout << "PASS: embedded boss pictures and mini-program code match local JPEGs byte for byte\n";
 }

@@ -1,0 +1,5388 @@
+{
+  "snapshotDate": "2026-11-24",
+  "source": "https://gw2.wishingstarmoye.com/gw2timer",
+  "sourceVersion": "v1.20261110",
+  "sourceData": "gw2timer_new_data_20261006.js",
+  "sourceSha256": "2677fdae6ec85e8abc84aeacd2cd07dc94dbc9c906d1639bf5bb4d48778cc33c",
+  "scheduleBasis": "UTC midnight; display and daily reset labels use Beijing UTC+8",
+  "count": 42,
+  "rows": [
+    {
+      "id": "shs",
+      "name": "船难海岸",
+      "nameEn": "Shipwreck Strand",
+      "category": "永恒愿景",
+      "categoryEn": "Visions of Eternity",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            200,
+            239,
+            212
+          ]
+        },
+        {
+          "id": 1,
+          "name": "巨锤猛汉之锤",
+          "nameEn": "Hammerhead Hulk",
+          "active": true,
+          "waypoints": "[&BJEPAAA=]",
+          "color": [
+            178,
+            238,
+            58
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 40
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 100
+        }
+      ]
+    },
+    {
+      "id": "stw",
+      "name": "星光林地",
+      "nameEn": "Starlit Weald",
+      "category": "永恒愿景",
+      "categoryEn": "Visions of Eternity",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            200,
+            239,
+            212
+          ]
+        },
+        {
+          "id": 1,
+          "name": "林地秘密",
+          "nameEn": "Secrets of the Weald",
+          "active": true,
+          "waypoints": "[&BJ4PAAA=]",
+          "color": [
+            178,
+            238,
+            58
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 1,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 85
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 35
+        },
+        {
+          "r": 0,
+          "d": 85
+        }
+      ]
+    },
+    {
+      "id": "voe_eg",
+      "name": "永恒花园",
+      "nameEn": "Eternal Garden",
+      "category": "永恒愿景",
+      "categoryEn": "Visions of Eternity",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            200,
+            239,
+            212
+          ]
+        },
+        {
+          "id": 1,
+          "name": "远古枷锁",
+          "nameEn": "Ancient Shackles",
+          "active": true,
+          "waypoints": "[&BPwPAAA=]",
+          "color": [
+            178,
+            238,
+            58
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 75
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 25
+        },
+        {
+          "r": 0,
+          "d": 95
+        }
+      ]
+    },
+    {
+      "id": "depths_cruelty",
+      "name": "魔泉空洞",
+      "nameEn": "Magic Spring Hollow",
+      "category": "永恒愿景",
+      "categoryEn": "Visions of Eternity",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            200,
+            239,
+            212
+          ]
+        },
+        {
+          "id": 1,
+          "name": "残酷深渊",
+          "nameEn": "Depths of Cruelty",
+          "active": true,
+          "waypoints": "[&BDYQAAA=]",
+          "color": [
+            178,
+            238,
+            58
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 120
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 150
+        }
+      ]
+    },
+    {
+      "id": "voe_noe",
+      "name": "汇聚-永恒枢纽",
+      "nameEn": "Convergence: Eternal Nexus",
+      "category": "永恒愿景",
+      "categoryEn": "Visions of Eternity",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            200,
+            239,
+            212
+          ]
+        },
+        {
+          "id": 1,
+          "name": "进本",
+          "nameEn": "Entry",
+          "active": true,
+          "waypoints": "[&BDYQAAA=]",
+          "color": [
+            178,
+            238,
+            58
+          ]
+        },
+        {
+          "id": 2,
+          "name": "副本锁定",
+          "nameEn": "Instance locked",
+          "active": true,
+          "waypoints": "[&BDYQAAA=]",
+          "color": [
+            107,
+            208,
+            137
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 60
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 10
+        },
+        {
+          "r": 2,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 150
+        }
+      ]
+    },
+    {
+      "id": "jwbn",
+      "name": "巴瓦·尼索斯",
+      "nameEn": "Bava Nisos",
+      "category": "珍瑟",
+      "categoryEn": "Janthir Wilds",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            196,
+            240,
+            255
+          ]
+        },
+        {
+          "id": 1,
+          "name": "泰坦航程",
+          "nameEn": "Titan's Voyage",
+          "active": true,
+          "waypoints": "[&BGEPAAA=]",
+          "color": [
+            196,
+            212,
+            255
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 80
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 90
+        }
+      ]
+    },
+    {
+      "id": "jwjs",
+      "name": "珍瑟新萃",
+      "nameEn": "Janthir Syntri",
+      "category": "珍瑟",
+      "categoryEn": "Janthir Wilds",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            196,
+            240,
+            255
+          ]
+        },
+        {
+          "id": 1,
+          "name": "迷雾与怪物",
+          "nameEn": "Mists and Monsters",
+          "active": true,
+          "waypoints": "[&BCoPAAA=]",
+          "color": [
+            196,
+            212,
+            255
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 30
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 25
+        },
+        {
+          "r": 0,
+          "d": 95
+        }
+      ]
+    },
+    {
+      "id": "jwcmb",
+      "name": "汇聚-巴里尔山",
+      "nameEn": "Convergence: Mount Balrior",
+      "category": "珍瑟",
+      "categoryEn": "Janthir Wilds",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            196,
+            240,
+            255
+          ]
+        },
+        {
+          "id": 1,
+          "name": "进本",
+          "nameEn": "Entry",
+          "active": true,
+          "waypoints": "[&BK4OAAA=]",
+          "color": [
+            196,
+            212,
+            255
+          ]
+        },
+        {
+          "id": 2,
+          "name": "副本锁定",
+          "nameEn": "Instance locked",
+          "active": true,
+          "waypoints": "[&BK4OAAA=]",
+          "color": [
+            146,
+            170,
+            235
+          ]
+        }
+      ],
+      "partial": [],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 10
+        },
+        {
+          "r": 2,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 150
+        }
+      ]
+    },
+    {
+      "id": "soometa",
+      "name": "天界之谜突破",
+      "nameEn": "Secrets of the Obscure metas",
+      "category": "天界之谜",
+      "categoryEn": "Secrets of the Obscure",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            226,
+            226,
+            226
+          ]
+        },
+        {
+          "id": 1,
+          "name": "天空哨站群岛",
+          "nameEn": "Skywatch Archipelago",
+          "active": true,
+          "waypoints": "[&BL4NAAA=]",
+          "color": [
+            107,
+            227,
+            142
+          ]
+        },
+        {
+          "id": 2,
+          "name": "阿姆尼塔斯",
+          "nameEn": "Amnytas",
+          "active": true,
+          "waypoints": "[&BDQOAAA=]",
+          "color": [
+            234,
+            194,
+            74
+          ]
+        }
+      ],
+      "partial": [],
+      "pattern": [
+        {
+          "r": 2,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 1,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        }
+      ]
+    },
+    {
+      "id": "sotottv",
+      "name": "汇聚-天界",
+      "nameEn": "Convergence: SotO",
+      "category": "天界之谜",
+      "categoryEn": "Secrets of the Obscure",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            255,
+            235,
+            235
+          ]
+        },
+        {
+          "id": 1,
+          "name": "进本",
+          "nameEn": "Entry",
+          "active": true,
+          "waypoints": "[&BOgNAAA=]",
+          "color": [
+            255,
+            189,
+            189
+          ]
+        },
+        {
+          "id": 2,
+          "name": "副本锁定",
+          "nameEn": "Instance locked",
+          "active": true,
+          "waypoints": "[&BOgNAAA=]",
+          "color": [
+            255,
+            153,
+            153
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 1,
+          "d": 10
+        },
+        {
+          "r": 2,
+          "d": 20
+        }
+      ],
+      "pattern": [
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 1,
+          "d": 10
+        },
+        {
+          "r": 2,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 120
+        }
+      ]
+    },
+    {
+      "id": "cadaynight",
+      "name": "凯珊昼夜交替",
+      "nameEn": "Cantha day / night",
+      "category": "凯珊",
+      "categoryEn": "Cantha",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 1,
+          "name": "白天",
+          "nameEn": "Day",
+          "active": true,
+          "waypoints": "",
+          "color": [
+            235,
+            250,
+            255
+          ]
+        },
+        {
+          "id": 2,
+          "name": "黄昏",
+          "nameEn": "Dusk",
+          "active": true,
+          "waypoints": "",
+          "color": [
+            255,
+            232,
+            148
+          ]
+        },
+        {
+          "id": 3,
+          "name": "夜晚",
+          "nameEn": "Night",
+          "active": true,
+          "waypoints": "",
+          "color": [
+            199,
+            205,
+            255
+          ]
+        },
+        {
+          "id": 4,
+          "name": "黎明",
+          "nameEn": "Dawn",
+          "active": true,
+          "waypoints": "",
+          "color": [
+            255,
+            253,
+            199
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 3,
+          "d": 35
+        },
+        {
+          "r": 4,
+          "d": 5
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 55
+        },
+        {
+          "r": 2,
+          "d": 5
+        },
+        {
+          "r": 3,
+          "d": 55
+        },
+        {
+          "r": 4,
+          "d": 5
+        }
+      ]
+    },
+    {
+      "id": "casp",
+      "name": "青函省",
+      "nameEn": "Seitung Province",
+      "category": "凯珊",
+      "categoryEn": "Cantha",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            138,
+            234,
+            244
+          ]
+        },
+        {
+          "id": 1,
+          "name": "以太之刃突袭",
+          "nameEn": "Aetherblade Assault",
+          "active": true,
+          "waypoints": "[&BGUNAAA=]",
+          "color": [
+            66,
+            200,
+            215
+          ]
+        }
+      ],
+      "partial": [],
+      "pattern": [
+        {
+          "r": 0,
+          "d": 90
+        },
+        {
+          "r": 1,
+          "d": 30
+        }
+      ]
+    },
+    {
+      "id": "cankc",
+      "name": "新凯宁城",
+      "nameEn": "New Kaineng City",
+      "category": "凯珊",
+      "categoryEn": "Cantha",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            138,
+            234,
+            244
+          ]
+        },
+        {
+          "id": 1,
+          "name": "凯宁城断电",
+          "nameEn": "Kaineng Blackout",
+          "active": true,
+          "waypoints": "[&BBkNAAA=]",
+          "color": [
+            66,
+            200,
+            215
+          ]
+        }
+      ],
+      "partial": [],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 90
+        }
+      ]
+    },
+    {
+      "id": "catew",
+      "name": "科瓦德荒野",
+      "nameEn": "Echovald Wilds",
+      "category": "凯珊",
+      "categoryEn": "Cantha",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            138,
+            234,
+            244
+          ]
+        },
+        {
+          "id": 1,
+          "name": "帮派战争",
+          "nameEn": "Gang War",
+          "active": true,
+          "waypoints": "[&BMwMAAA=]",
+          "color": [
+            66,
+            200,
+            215
+          ]
+        },
+        {
+          "id": 2,
+          "name": "白杨研究所",
+          "nameEn": "Aspenwood",
+          "active": true,
+          "waypoints": "[&BPkMAAA=]",
+          "color": [
+            66,
+            200,
+            215
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 30
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 35
+        },
+        {
+          "r": 0,
+          "d": 35
+        },
+        {
+          "r": 2,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 30
+        }
+      ]
+    },
+    {
+      "id": "cade",
+      "name": "巨龙尽头",
+      "nameEn": "Dragon's End",
+      "category": "凯珊",
+      "categoryEn": "Cantha",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 1,
+          "name": "准备阶段",
+          "nameEn": "Preparation",
+          "active": true,
+          "waypoints": "[&BKIMAAA=]",
+          "color": [
+            138,
+            234,
+            244
+          ]
+        },
+        {
+          "id": 2,
+          "name": "翠玉之海之战",
+          "nameEn": "Battle for the Jade Sea",
+          "active": true,
+          "waypoints": "[&BKIMAAA=]",
+          "color": [
+            66,
+            200,
+            215
+          ]
+        }
+      ],
+      "partial": [],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 60
+        },
+        {
+          "r": 2,
+          "d": 60
+        }
+      ]
+    },
+    {
+      "id": "daynight",
+      "name": "泰瑞亚昼夜交替",
+      "nameEn": "Tyria day / night",
+      "category": "泰瑞亚中心",
+      "categoryEn": "Central Tyria",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 1,
+          "name": "白天",
+          "nameEn": "Day",
+          "active": true,
+          "waypoints": "",
+          "color": [
+            235,
+            250,
+            255
+          ]
+        },
+        {
+          "id": 2,
+          "name": "黄昏",
+          "nameEn": "Dusk",
+          "active": true,
+          "waypoints": "",
+          "color": [
+            255,
+            232,
+            148
+          ]
+        },
+        {
+          "id": 3,
+          "name": "夜晚",
+          "nameEn": "Night",
+          "active": true,
+          "waypoints": "",
+          "color": [
+            199,
+            205,
+            255
+          ]
+        },
+        {
+          "id": 4,
+          "name": "黎明",
+          "nameEn": "Dawn",
+          "active": true,
+          "waypoints": "",
+          "color": [
+            255,
+            253,
+            199
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 3,
+          "d": 25
+        },
+        {
+          "r": 4,
+          "d": 5
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 70
+        },
+        {
+          "r": 2,
+          "d": 5
+        },
+        {
+          "r": 3,
+          "d": 40
+        },
+        {
+          "r": 4,
+          "d": 5
+        }
+      ]
+    },
+    {
+      "id": "wb",
+      "name": "世界BOSS",
+      "nameEn": "World bosses",
+      "category": "泰瑞亚中心",
+      "categoryEn": "Central Tyria",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 1,
+          "name": "泰达·科文顿",
+          "nameEn": "Admiral Taidha Covington",
+          "active": true,
+          "waypoints": "[&BKgBAAA=]",
+          "color": [
+            206,
+            220,
+            228
+          ]
+        },
+        {
+          "id": 2,
+          "name": "卓玛之爪",
+          "nameEn": "Claw of Jormag",
+          "active": true,
+          "waypoints": "[&BHoCAAA=]",
+          "color": [
+            206,
+            220,
+            228
+          ]
+        },
+        {
+          "id": 3,
+          "name": "火焰元素",
+          "nameEn": "Fire Elemental",
+          "active": true,
+          "waypoints": "[&BEcAAAA=]",
+          "color": [
+            133,
+            181,
+            255
+          ]
+        },
+        {
+          "id": 4,
+          "name": "魔像马克II型",
+          "nameEn": "Inquest Golem Mark II",
+          "active": true,
+          "waypoints": "[&BNQCAAA=]",
+          "color": [
+            206,
+            220,
+            228
+          ]
+        },
+        {
+          "id": 5,
+          "name": "巨型丛林地虫",
+          "nameEn": "Great Jungle Wurm",
+          "active": true,
+          "waypoints": "[&BEEFAAA=]",
+          "color": [
+            133,
+            181,
+            255
+          ]
+        },
+        {
+          "id": 6,
+          "name": "超能毁灭者",
+          "nameEn": "Megadestroyer",
+          "active": true,
+          "waypoints": "[&BM0CAAA=]",
+          "color": [
+            206,
+            220,
+            228
+          ]
+        },
+        {
+          "id": 7,
+          "name": "莫迪尔沃尔格斯",
+          "nameEn": "Modniir Ulgoth",
+          "active": true,
+          "waypoints": "[&BLAAAAA=]",
+          "color": [
+            206,
+            220,
+            228
+          ]
+        },
+        {
+          "id": 8,
+          "name": "暗影巨兽",
+          "nameEn": "Shadow Behemoth",
+          "active": true,
+          "waypoints": "[&BPcAAAA=]",
+          "color": [
+            133,
+            181,
+            255
+          ]
+        },
+        {
+          "id": 9,
+          "name": "斯瓦尼亚萨满",
+          "nameEn": "Svanir Shaman Chief",
+          "active": true,
+          "waypoints": "[&BMIDAAA=]",
+          "color": [
+            133,
+            181,
+            255
+          ]
+        },
+        {
+          "id": 10,
+          "name": "碎裂巨兽",
+          "nameEn": "The Shatterer",
+          "active": true,
+          "waypoints": "[&BE4DAAA=]",
+          "color": [
+            206,
+            220,
+            228
+          ]
+        }
+      ],
+      "partial": [],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 15
+        },
+        {
+          "r": 9,
+          "d": 15
+        },
+        {
+          "r": 6,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 10,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 7,
+          "d": 15
+        },
+        {
+          "r": 8,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 9,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 1,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 6,
+          "d": 15
+        },
+        {
+          "r": 8,
+          "d": 15
+        },
+        {
+          "r": 10,
+          "d": 15
+        },
+        {
+          "r": 9,
+          "d": 15
+        },
+        {
+          "r": 7,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 8,
+          "d": 15
+        }
+      ]
+    },
+    {
+      "id": "hwb",
+      "name": "大型世界BOSS",
+      "nameEn": "Hard world bosses",
+      "category": "泰瑞亚中心",
+      "categoryEn": "Central Tyria",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            133,
+            181,
+            255
+          ]
+        },
+        {
+          "id": 1,
+          "name": "三重麻烦",
+          "nameEn": "Triple Trouble",
+          "active": true,
+          "waypoints": "[&BKoBAAA=]",
+          "color": [
+            206,
+            220,
+            228
+          ]
+        },
+        {
+          "id": 2,
+          "name": "喀壳虫女王",
+          "nameEn": "Karka Queen",
+          "active": true,
+          "waypoints": "[&BNUGAAA=]",
+          "color": [
+            206,
+            220,
+            228
+          ]
+        },
+        {
+          "id": 3,
+          "name": "吞噬托",
+          "nameEn": "Tequatl the Sunless",
+          "active": true,
+          "waypoints": "[&BNABAAA=]",
+          "color": [
+            206,
+            220,
+            228
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 3,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 1,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 2,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 3,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 1,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 90
+        },
+        {
+          "r": 2,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 3,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 1,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 120
+        },
+        {
+          "r": 2,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 3,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 1,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 120
+        },
+        {
+          "r": 2,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 3,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 1,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 2,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 3,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 1,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 150
+        },
+        {
+          "r": 2,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 3,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 1,
+          "d": 30
+        }
+      ],
+      "pattern": []
+    },
+    {
+      "id": "la",
+      "name": "魔径异常体",
+      "nameEn": "Ley-Line Anomaly",
+      "category": "泰瑞亚中心",
+      "categoryEn": "Central Tyria",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            232,
+            232,
+            232
+          ]
+        },
+        {
+          "id": 1,
+          "name": "林线瀑布",
+          "nameEn": "Timberline Falls",
+          "active": true,
+          "waypoints": "[&BEwCAAA=]",
+          "color": [
+            0,
+            238,
+            238
+          ]
+        },
+        {
+          "id": 2,
+          "name": "钢铁平原",
+          "nameEn": "Iron Marches",
+          "active": true,
+          "waypoints": "[&BOYBAAA=]",
+          "color": [
+            255,
+            106,
+            106
+          ]
+        },
+        {
+          "id": 3,
+          "name": "甘达拉战区",
+          "nameEn": "Gendarran Fields",
+          "active": true,
+          "waypoints": "[&BOQAAAA=]",
+          "color": [
+            84,
+            255,
+            159
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 20
+        },
+        {
+          "r": 1,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 100
+        },
+        {
+          "r": 2,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 100
+        },
+        {
+          "r": 3,
+          "d": 20
+        }
+      ],
+      "pattern": [
+        {
+          "r": 0,
+          "d": 100
+        },
+        {
+          "r": 1,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 100
+        },
+        {
+          "r": 2,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 100
+        },
+        {
+          "r": 3,
+          "d": 20
+        }
+      ]
+    },
+    {
+      "id": "pvpat",
+      "name": "PvP锦标赛",
+      "nameEn": "PvP tournaments",
+      "category": "泰瑞亚中心",
+      "categoryEn": "Central Tyria",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            138,
+            234,
+            244
+          ]
+        },
+        {
+          "id": 1,
+          "name": "巴萨泽之拳头",
+          "nameEn": "Fist of Balthazar",
+          "active": true,
+          "waypoints": "",
+          "color": [
+            66,
+            200,
+            215
+          ]
+        },
+        {
+          "id": 2,
+          "name": "古兰斯的游戏",
+          "nameEn": "Grenth's Game",
+          "active": true,
+          "waypoints": "",
+          "color": [
+            66,
+            200,
+            215
+          ]
+        },
+        {
+          "id": 3,
+          "name": "梅兰朵的比赛",
+          "nameEn": "Melandru's Match",
+          "active": true,
+          "waypoints": "",
+          "color": [
+            66,
+            200,
+            215
+          ]
+        },
+        {
+          "id": 4,
+          "name": "丽莎军团",
+          "nameEn": "Legion of Lyssa",
+          "active": true,
+          "waypoints": "",
+          "color": [
+            66,
+            200,
+            215
+          ]
+        }
+      ],
+      "partial": [],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 60
+        },
+        {
+          "r": 0,
+          "d": 120
+        },
+        {
+          "r": 2,
+          "d": 60
+        },
+        {
+          "r": 0,
+          "d": 120
+        },
+        {
+          "r": 3,
+          "d": 60
+        },
+        {
+          "r": 0,
+          "d": 120
+        },
+        {
+          "r": 4,
+          "d": 60
+        },
+        {
+          "r": 0,
+          "d": 120
+        }
+      ]
+    },
+    {
+      "id": "DomainOfIstan",
+      "name": "伊斯坦领域",
+      "nameEn": "Domain of Istan",
+      "category": "世界动态第4季",
+      "categoryEn": "Living World Season 4",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            234,
+            214,
+            241
+          ]
+        },
+        {
+          "id": 1,
+          "name": "帕拉瓦",
+          "nameEn": "Palawadan",
+          "active": true,
+          "waypoints": "[&BPcKAAA=]",
+          "color": [
+            187,
+            119,
+            207
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 1,
+          "d": 15
+        }
+      ],
+      "pattern": [
+        {
+          "r": 0,
+          "d": 90
+        },
+        {
+          "r": 1,
+          "d": 30
+        }
+      ]
+    },
+    {
+      "id": "JahaiBluffs",
+      "name": "亚哈悬崖",
+      "nameEn": "Jahai Bluffs",
+      "category": "世界动态第4季",
+      "categoryEn": "Living World Season 4",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            243,
+            231,
+            250
+          ]
+        },
+        {
+          "id": 1,
+          "name": "护送",
+          "nameEn": "Escort",
+          "active": true,
+          "waypoints": "[&BHALAAA=]",
+          "color": [
+            209,
+            186,
+            223
+          ]
+        },
+        {
+          "id": 2,
+          "name": "死亡碎裂巨兽",
+          "nameEn": "Death-Branded Shatterer",
+          "active": true,
+          "waypoints": "[&BHALAAA=]",
+          "color": [
+            154,
+            115,
+            175
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 60
+        },
+        {
+          "r": 1,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        }
+      ],
+      "pattern": [
+        {
+          "r": 0,
+          "d": 90
+        },
+        {
+          "r": 1,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        }
+      ]
+    },
+    {
+      "id": "AncestorTree",
+      "name": "亚哈悬崖先祖之树",
+      "nameEn": "Ancestor Tree",
+      "category": "世界动态第4季",
+      "categoryEn": "Living World Season 4",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 1,
+          "name": "巨灵瓶子",
+          "nameEn": "Djinn bottle",
+          "active": true,
+          "waypoints": "[&BHoLAAA=]",
+          "color": [
+            82,
+            165,
+            92
+          ]
+        },
+        {
+          "id": 2,
+          "name": "烙印水晶",
+          "nameEn": "Branded crystal",
+          "active": true,
+          "waypoints": "[&BHoLAAA=]",
+          "color": [
+            132,
+            198,
+            140
+          ]
+        },
+        {
+          "id": 3,
+          "name": "重置",
+          "nameEn": "Reset",
+          "active": true,
+          "waypoints": "[&BHoLAAA=]",
+          "color": [
+            230,
+            245,
+            179
+          ]
+        }
+      ],
+      "partial": [],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 10
+        },
+        {
+          "r": 2,
+          "d": 10
+        },
+        {
+          "r": 3,
+          "d": 10
+        }
+      ]
+    },
+    {
+      "id": "ThunderheadPeaks",
+      "name": "雷云高峰",
+      "nameEn": "Thunderhead Peaks",
+      "category": "世界动态第4季",
+      "categoryEn": "Living World Season 4",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            240,
+            248,
+            255
+          ]
+        },
+        {
+          "id": 1,
+          "name": "愤怒使者",
+          "nameEn": "Wrathbringer",
+          "active": true,
+          "waypoints": "[&BLsLAAA=]",
+          "color": [
+            181,
+            181,
+            181
+          ]
+        },
+        {
+          "id": 2,
+          "name": "焦油",
+          "nameEn": "Oil Floes",
+          "active": true,
+          "waypoints": "[&BKYLAAA=]",
+          "color": [
+            243,
+            231,
+            250
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 1,
+          "d": 5
+        },
+        {
+          "r": 0,
+          "d": 40
+        },
+        {
+          "r": 2,
+          "d": 15
+        }
+      ],
+      "pattern": [
+        {
+          "r": 0,
+          "d": 45
+        },
+        {
+          "r": 1,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 40
+        },
+        {
+          "r": 2,
+          "d": 15
+        }
+      ]
+    },
+    {
+      "id": "GrothmarValley",
+      "name": "戈瑟玛山谷",
+      "nameEn": "Grothmar Valley",
+      "category": "冰巢传说",
+      "categoryEn": "The Icebrood Saga",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            255,
+            252,
+            204
+          ]
+        },
+        {
+          "id": 1,
+          "name": "雕像",
+          "nameEn": "Effigy",
+          "active": true,
+          "waypoints": "[&BAcMAAA=]",
+          "color": [
+            255,
+            185,
+            15
+          ]
+        },
+        {
+          "id": 2,
+          "name": "厄运传说圣坛",
+          "nameEn": "Doomlore Shrine",
+          "active": true,
+          "waypoints": "[&BAEMAAA=]",
+          "color": [
+            255,
+            215,
+            0
+          ]
+        },
+        {
+          "id": 3,
+          "name": "软泥坑",
+          "nameEn": "Ooze Pits",
+          "active": true,
+          "waypoints": "[&BP0LAAA=]",
+          "color": [
+            255,
+            185,
+            15
+          ]
+        },
+        {
+          "id": 4,
+          "name": "金属音乐会",
+          "nameEn": "Metal Concert",
+          "active": true,
+          "waypoints": "[&BBkMAAA=]",
+          "color": [
+            255,
+            215,
+            0
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 10
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 13
+        },
+        {
+          "r": 2,
+          "d": 22
+        },
+        {
+          "r": 0,
+          "d": 5
+        },
+        {
+          "r": 3,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        }
+      ]
+    },
+    {
+      "id": "BjoraMarches",
+      "name": "波卓拉边境",
+      "nameEn": "Bjora Marches",
+      "category": "冰巢传说",
+      "categoryEn": "The Icebrood Saga",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            132,
+            201,
+            251
+          ]
+        },
+        {
+          "id": 1,
+          "name": "德拉克",
+          "nameEn": "Drakkar",
+          "active": true,
+          "waypoints": "[&BEUMAAA=]",
+          "color": [
+            66,
+            153,
+            215
+          ]
+        },
+        {
+          "id": 2,
+          "name": "冬季风暴",
+          "nameEn": "Winter Storms",
+          "active": true,
+          "waypoints": "[&BCcMAAA=]",
+          "color": [
+            98,
+            177,
+            234
+          ]
+        },
+        {
+          "id": 3,
+          "name": "冰巢构造体",
+          "nameEn": "Icebrood Construct",
+          "active": true,
+          "waypoints": "[&BCcMAAA=]",
+          "color": [
+            66,
+            153,
+            215
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 3,
+          "d": 20
+        }
+      ],
+      "pattern": [
+        {
+          "r": 0,
+          "d": 45
+        },
+        {
+          "r": 1,
+          "d": 35
+        },
+        {
+          "r": 0,
+          "d": 5
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 20
+        }
+      ]
+    },
+    {
+      "id": "EyeOfTheNorth",
+      "name": "北方之眼",
+      "nameEn": "Eye of the North",
+      "category": "冰巢传说",
+      "categoryEn": "The Icebrood Saga",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            108,
+            189,
+            238
+          ]
+        },
+        {
+          "id": 1,
+          "name": "提线木偶（公共）",
+          "nameEn": "Twisted Marionette (public)",
+          "active": true,
+          "waypoints": "[&BAkMAAA=]",
+          "color": [
+            66,
+            200,
+            215
+          ]
+        },
+        {
+          "id": 2,
+          "name": "巨龙风暴（公共）",
+          "nameEn": "Dragonstorm (public)",
+          "active": true,
+          "waypoints": "[&BAkMAAA=]",
+          "color": [
+            108,
+            189,
+            238
+          ]
+        },
+        {
+          "id": 3,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            255,
+            117,
+            107
+          ]
+        }
+      ],
+      "partial": [],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 40
+        },
+        {
+          "r": 2,
+          "d": 20
+        },
+        {
+          "r": 3,
+          "d": 40
+        }
+      ]
+    },
+    {
+      "id": "VerdantBrink",
+      "name": "苍翠边界",
+      "nameEn": "Verdant Brink",
+      "category": "迈古玛",
+      "categoryEn": "Heart of Thorns",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 1,
+          "name": "白天",
+          "nameEn": "Day",
+          "active": true,
+          "waypoints": "[&BAgIAAA=]",
+          "color": [
+            196,
+            226,
+            165
+          ]
+        },
+        {
+          "id": 2,
+          "name": "夜晚",
+          "nameEn": "Night",
+          "active": true,
+          "waypoints": "[&BAgIAAA=]",
+          "color": [
+            132,
+            193,
+            71
+          ]
+        },
+        {
+          "id": 3,
+          "name": "夜晚BOSS",
+          "nameEn": "Night bosses",
+          "active": true,
+          "waypoints": "[&BAgIAAA=]",
+          "color": [
+            109,
+            172,
+            47
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 2,
+          "d": 10
+        },
+        {
+          "r": 3,
+          "d": 20
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 75
+        },
+        {
+          "r": 2,
+          "d": 25
+        },
+        {
+          "r": 3,
+          "d": 20
+        }
+      ]
+    },
+    {
+      "id": "AuricBasin",
+      "name": "赤金盆地",
+      "nameEn": "Auric Basin",
+      "category": "迈古玛",
+      "categoryEn": "Heart of Thorns",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 1,
+          "name": "守望哨站",
+          "nameEn": "Outposts",
+          "active": true,
+          "waypoints": "[&BN0HAAA=]",
+          "color": [
+            255,
+            227,
+            127
+          ]
+        },
+        {
+          "id": 2,
+          "name": "挑战",
+          "nameEn": "Challenges",
+          "active": true,
+          "waypoints": "[&BGwIAAA=]",
+          "color": [
+            255,
+            213,
+            61
+          ]
+        },
+        {
+          "id": 3,
+          "name": "八爪藤",
+          "nameEn": "Octovine",
+          "active": true,
+          "waypoints": "[&BAIIAAA=]",
+          "color": [
+            234,
+            183,
+            0
+          ]
+        },
+        {
+          "id": 4,
+          "name": "重置",
+          "nameEn": "Reset",
+          "active": true,
+          "waypoints": "[&BMYHAAA=]",
+          "color": [
+            255,
+            241,
+            193
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 1,
+          "d": 45
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 20
+        },
+        {
+          "r": 4,
+          "d": 10
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 75
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 20
+        },
+        {
+          "r": 4,
+          "d": 10
+        }
+      ]
+    },
+    {
+      "id": "TangledDepths",
+      "name": "缠藤深渊",
+      "nameEn": "Tangled Depths",
+      "category": "迈古玛",
+      "categoryEn": "Heart of Thorns",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 1,
+          "name": "前哨事件",
+          "nameEn": "Outposts",
+          "active": true,
+          "waypoints": "[&BMwHAAA=]",
+          "color": [
+            255,
+            215,
+            215
+          ]
+        },
+        {
+          "id": 2,
+          "name": "准备",
+          "nameEn": "Preparation",
+          "active": true,
+          "waypoints": "[&BPUHAAA=]",
+          "color": [
+            255,
+            189,
+            189
+          ]
+        },
+        {
+          "id": 3,
+          "name": "查克虫王",
+          "nameEn": "Chak Gerent",
+          "active": true,
+          "waypoints": "[&BPUHAAA=]",
+          "color": [
+            255,
+            153,
+            153
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 1,
+          "d": 25
+        },
+        {
+          "r": 2,
+          "d": 5
+        },
+        {
+          "r": 3,
+          "d": 20
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 95
+        },
+        {
+          "r": 2,
+          "d": 5
+        },
+        {
+          "r": 3,
+          "d": 20
+        }
+      ]
+    },
+    {
+      "id": "DragonStand",
+      "name": "巨龙阵地",
+      "nameEn": "Dragon's Stand",
+      "category": "迈古玛",
+      "categoryEn": "Heart of Thorns",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 1,
+          "name": "进攻开始",
+          "nameEn": "Assault begins",
+          "active": true,
+          "waypoints": "[&BBAIAAA=]",
+          "color": [
+            159,
+            153,
+            204
+          ]
+        },
+        {
+          "id": 2,
+          "name": "继续",
+          "nameEn": "Continues",
+          "active": true,
+          "waypoints": "",
+          "color": [
+            200,
+            197,
+            229
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 2,
+          "d": 90
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 120
+        }
+      ]
+    },
+    {
+      "id": "LakeDoric",
+      "name": "多里克湖",
+      "nameEn": "Lake Doric",
+      "category": "世界动态第3季",
+      "categoryEn": "Living World Season 3",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 1,
+          "name": "塞德拉：阿格莎",
+          "nameEn": "Saidra: Agatha",
+          "active": true,
+          "waypoints": "[&BKQJAAA=]",
+          "color": [
+            60,
+            219,
+            237
+          ]
+        },
+        {
+          "id": 2,
+          "name": "新沃土之森：女王杀手",
+          "nameEn": "New Loamhurst: Queen Killer",
+          "active": true,
+          "waypoints": "[&BK4JAAA=]",
+          "color": [
+            175,
+            238,
+            238
+          ]
+        },
+        {
+          "id": 3,
+          "name": "诺兰：伊梅尔霍夫",
+          "nameEn": "Noran: Immelhoof",
+          "active": true,
+          "waypoints": "[&BKsJAAA=] [&BLMJAAA=]",
+          "color": [
+            0,
+            191,
+            255
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 2,
+          "d": 30
+        }
+      ],
+      "pattern": [
+        {
+          "r": 3,
+          "d": 30
+        },
+        {
+          "r": 1,
+          "d": 45
+        },
+        {
+          "r": 2,
+          "d": 45
+        }
+      ]
+    },
+    {
+      "id": "CrystalOasis",
+      "name": "水晶绿洲",
+      "nameEn": "Crystal Oasis",
+      "category": "烈焰征途",
+      "categoryEn": "Path of Fire",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            196,
+            226,
+            165
+          ]
+        },
+        {
+          "id": 1,
+          "name": "俱乐部闪电战",
+          "nameEn": "Casino Blitz",
+          "active": true,
+          "waypoints": "[&BLsKAAA=]",
+          "color": [
+            187,
+            232,
+            96
+          ]
+        },
+        {
+          "id": 2,
+          "name": "彩罐丘牙兽",
+          "nameEn": "Choya Pinata",
+          "active": true,
+          "waypoints": "[&BLsKAAA=]",
+          "color": [
+            132,
+            193,
+            71
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 5
+        },
+        {
+          "r": 1,
+          "d": 16
+        },
+        {
+          "r": 2,
+          "d": 9
+        }
+      ],
+      "pattern": [
+        {
+          "r": 0,
+          "d": 95
+        },
+        {
+          "r": 1,
+          "d": 16
+        },
+        {
+          "r": 2,
+          "d": 9
+        }
+      ]
+    },
+    {
+      "id": "DesertHighlands",
+      "name": "沙漠高地",
+      "nameEn": "Desert Highlands",
+      "category": "烈焰征途",
+      "categoryEn": "Path of Fire",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            255,
+            227,
+            127
+          ]
+        },
+        {
+          "id": 1,
+          "name": "寻找埋藏的宝藏",
+          "nameEn": "Buried Treasure",
+          "active": true,
+          "waypoints": "[&BGsKAAA=]",
+          "color": [
+            255,
+            213,
+            61
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 60
+        },
+        {
+          "r": 1,
+          "d": 20
+        }
+      ],
+      "pattern": [
+        {
+          "r": 0,
+          "d": 100
+        },
+        {
+          "r": 1,
+          "d": 20
+        }
+      ]
+    },
+    {
+      "id": "ElonRiverlands",
+      "name": "伊伦河湾",
+      "nameEn": "Elon Riverlands",
+      "category": "烈焰征途",
+      "categoryEn": "Path of Fire",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            188,
+            247,
+            254
+          ]
+        },
+        {
+          "id": 1,
+          "name": "晋升之路",
+          "nameEn": "Path to Ascension",
+          "active": true,
+          "waypoints": "[&BFMKAAA=]",
+          "color": [
+            145,
+            199,
+            255
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 1,
+          "d": 15
+        }
+      ],
+      "pattern": [
+        {
+          "r": 0,
+          "d": 75
+        },
+        {
+          "r": 1,
+          "d": 45
+        }
+      ]
+    },
+    {
+      "id": "TheDesolation",
+      "name": "荒芜之地",
+      "nameEn": "The Desolation",
+      "category": "烈焰征途",
+      "categoryEn": "Path of Fire",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            228,
+            206,
+            190
+          ]
+        },
+        {
+          "id": 1,
+          "name": "磨难血口",
+          "nameEn": "Maws of Torment",
+          "active": true,
+          "waypoints": "[&BGQKAAA=]",
+          "color": [
+            255,
+            217,
+            107
+          ]
+        },
+        {
+          "id": 2,
+          "name": "巨努多地虫",
+          "nameEn": "Junundu Rising",
+          "active": true,
+          "waypoints": "[&BFgKAAA=]",
+          "color": [
+            233,
+            177,
+            25
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 2,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 10
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 10
+        },
+        {
+          "r": 2,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 40
+        },
+        {
+          "r": 2,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 10
+        }
+      ]
+    },
+    {
+      "id": "DomainOfVabbi",
+      "name": "瓦比领域",
+      "nameEn": "Domain of Vabbi",
+      "category": "烈焰征途",
+      "categoryEn": "Path of Fire",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            251,
+            199,
+            132
+          ]
+        },
+        {
+          "id": 1,
+          "name": "巨蛇之怒",
+          "nameEn": "Serpents' Ire",
+          "active": true,
+          "waypoints": "[&BPIKAAA=]",
+          "color": [
+            166,
+            127,
+            107
+          ]
+        },
+        {
+          "id": 2,
+          "name": "战场恶犬",
+          "nameEn": "Forged with Fire",
+          "active": true,
+          "waypoints": "[&BG0KAAA=]",
+          "color": [
+            159,
+            153,
+            204
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 2,
+          "d": 30
+        }
+      ],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 30
+        },
+        {
+          "r": 2,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 2,
+          "d": 30
+        }
+      ]
+    },
+    {
+      "id": "ClockworkChaos",
+      "name": "疯狂发条",
+      "nameEn": "Clockwork Chaos",
+      "category": "世界动态第一季",
+      "categoryEn": "Living World Season 1",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            255,
+            202,
+            204
+          ]
+        },
+        {
+          "id": 1,
+          "name": "钟表入侵",
+          "nameEn": "Clockwork Invasion",
+          "active": true,
+          "waypoints": "[&BJsDAAA=]",
+          "color": [
+            255,
+            204,
+            78
+          ]
+        }
+      ],
+      "partial": [],
+      "pattern": [
+        {
+          "r": 0,
+          "d": 60
+        },
+        {
+          "r": 1,
+          "d": 20
+        },
+        {
+          "r": 0,
+          "d": 40
+        }
+      ]
+    },
+    {
+      "id": "DryTop",
+      "name": "干涸高地",
+      "nameEn": "Dry Top",
+      "category": "世界动态第2季",
+      "categoryEn": "Living World Season 2",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 1,
+          "name": "坠毁点",
+          "nameEn": "Crash Site",
+          "active": true,
+          "waypoints": "[&BIAHAAA=]",
+          "color": [
+            252,
+            250,
+            220
+          ]
+        },
+        {
+          "id": 2,
+          "name": "沙尘暴",
+          "nameEn": "Sandstorm",
+          "active": true,
+          "waypoints": "[&BIAHAAA=]",
+          "color": [
+            222,
+            217,
+            138
+          ]
+        }
+      ],
+      "partial": [],
+      "pattern": [
+        {
+          "r": 1,
+          "d": 40
+        },
+        {
+          "r": 2,
+          "d": 20
+        }
+      ]
+    },
+    {
+      "id": "JoKoAttack",
+      "name": "区域防守-约科进攻",
+      "nameEn": "Joko Invasions",
+      "category": "特殊事件",
+      "categoryEn": "Special events",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            222,
+            184,
+            135
+          ]
+        },
+        {
+          "id": 1,
+          "name": "甘达拉战区",
+          "nameEn": "Gendarran Fields",
+          "active": true,
+          "waypoints": "[&BM0DAAA=]",
+          "color": [
+            205,
+            133,
+            63
+          ]
+        },
+        {
+          "id": 2,
+          "name": "南阳海湾",
+          "nameEn": "Southsun Cove",
+          "active": true,
+          "waypoints": "[&BNUGAAA=]",
+          "color": [
+            205,
+            133,
+            63
+          ]
+        },
+        {
+          "id": 3,
+          "name": "度量领域",
+          "nameEn": "Metrica Province",
+          "active": true,
+          "waypoints": "[&BEgAAAA=]",
+          "color": [
+            205,
+            133,
+            63
+          ]
+        },
+        {
+          "id": 4,
+          "name": "卡勒顿之森",
+          "nameEn": "Caledon Forest",
+          "active": true,
+          "waypoints": "[&BDcBAAA=]",
+          "color": [
+            205,
+            133,
+            63
+          ]
+        },
+        {
+          "id": 5,
+          "name": "女王谷",
+          "nameEn": "Queensdale",
+          "active": true,
+          "waypoints": "[&BPEAAAA=]",
+          "color": [
+            205,
+            133,
+            63
+          ]
+        },
+        {
+          "id": 6,
+          "name": "旅者丘陵",
+          "nameEn": "Wayfarer Foothills",
+          "active": true,
+          "waypoints": "[&BHYBAAA=]",
+          "color": [
+            205,
+            133,
+            63
+          ]
+        },
+        {
+          "id": 7,
+          "name": "阿什福德平原",
+          "nameEn": "Plains of Ashford",
+          "active": true,
+          "waypoints": "[&BH8BAAA=]",
+          "color": [
+            205,
+            133,
+            63
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 2,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 3,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 4,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 5,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 6,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 7,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 1,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 2,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 3,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 4,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 5,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 6,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 7,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 1,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 2,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 3,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 4,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 5,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 6,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 7,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 1,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 2,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 3,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 4,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        },
+        {
+          "r": 5,
+          "d": 30
+        },
+        {
+          "r": 0,
+          "d": 30
+        }
+      ],
+      "pattern": [],
+      "weeklyPartials": [
+        [
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          }
+        ],
+        [
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          }
+        ],
+        [
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          }
+        ],
+        [
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          }
+        ],
+        [
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          }
+        ],
+        [
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          }
+        ],
+        [
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 3,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 4,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 5,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 6,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 7,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 1,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          },
+          {
+            "r": 2,
+            "d": 30
+          },
+          {
+            "r": 0,
+            "d": 30
+          }
+        ]
+      ]
+    },
+    {
+      "id": "BloodstoneCrazed",
+      "name": "血石目击者",
+      "nameEn": "Bloodstone-Crazed sightings",
+      "category": "特殊事件",
+      "categoryEn": "Special events",
+      "approximate": true,
+      "phases": [
+        {
+          "id": 0,
+          "name": "陆行鸟、噬蝎",
+          "nameEn": "Moa / Devourer",
+          "active": true,
+          "waypoints": "[&BLkAAAA=] [&BMkDAAA=] [&BBQAAAA=] [&BGIAAAA=] [&BJcHAAA=] [&BKwHAAA=] [&BAECAAA=] [&BE8BAAA=]",
+          "color": [
+            255,
+            214,
+            222
+          ]
+        },
+        {
+          "id": 1,
+          "name": "陆行鸟、噬蝎、短面熊、鲨鱼",
+          "nameEn": "Moa / Devourer / Arctodus / Shark",
+          "active": true,
+          "waypoints": "[&BLkAAAA=] [&BMkDAAA=] [&BBQAAAA=] [&BGIAAAA=] [&BJcHAAA=] [&BKwHAAA=] [&BAECAAA=] [&BE8BAAA=] [&BLQAAAA=] [&BOsAAAA=] [&BIwBAAA=] [&BH4CAAA=] [&BKgBAAA=] [&BNUCAAA=]",
+          "color": [
+            255,
+            214,
+            222
+          ]
+        },
+        {
+          "id": 2,
+          "name": "短面熊、鲨鱼",
+          "nameEn": "Arctodus / Shark",
+          "active": true,
+          "waypoints": "[&BLQAAAA=] [&BOsAAAA=] [&BIwBAAA=] [&BH4CAAA=] [&BKgBAAA=] [&BNUCAAA=]",
+          "color": [
+            255,
+            214,
+            222
+          ]
+        },
+        {
+          "id": 3,
+          "name": "短面熊、鲨鱼、翼龙",
+          "nameEn": "Arctodus / Shark / Wyvern",
+          "active": true,
+          "waypoints": "[&BLQAAAA=] [&BOsAAAA=] [&BIwBAAA=] [&BH4CAAA=] [&BKgBAAA=] [&BNUCAAA=] [&BOAHAAA=] [&BMwHAAA=]",
+          "color": [
+            255,
+            214,
+            222
+          ]
+        },
+        {
+          "id": 4,
+          "name": "翼龙",
+          "nameEn": "Wyvern",
+          "active": true,
+          "waypoints": "[&BOAHAAA=] [&BMwHAAA=]",
+          "color": [
+            255,
+            214,
+            222
+          ]
+        },
+        {
+          "id": 5,
+          "name": "陆行鸟、噬蝎、翼龙",
+          "nameEn": "Moa / Devourer / Wyvern",
+          "active": true,
+          "waypoints": "[&BLkAAAA=] [&BMkDAAA=] [&BBQAAAA=] [&BGIAAAA=] [&BJcHAAA=] [&BKwHAAA=] [&BAECAAA=] [&BE8BAAA=] [&BOAHAAA=] [&BMwHAAA=]",
+          "color": [
+            255,
+            214,
+            222
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 1,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 1,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 1,
+          "d": 15
+        },
+        {
+          "r": 1,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 1,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 2,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 1,
+          "d": 15
+        },
+        {
+          "r": 1,
+          "d": 15
+        },
+        {
+          "r": 1,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 3,
+          "d": 15
+        },
+        {
+          "r": 4,
+          "d": 15
+        },
+        {
+          "r": 5,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        },
+        {
+          "r": 0,
+          "d": 15
+        }
+      ],
+      "pattern": []
+    },
+    {
+      "id": "Zeghai",
+      "name": "迷雾武器商人",
+      "nameEn": "Zeghai, mist weapon vendor",
+      "category": "特殊事件",
+      "categoryEn": "Special events",
+      "approximate": false,
+      "phases": [
+        {
+          "id": 0,
+          "name": "等待",
+          "nameEn": "Idle",
+          "active": false,
+          "waypoints": "",
+          "color": [
+            223,
+            230,
+            234
+          ]
+        },
+        {
+          "id": 1,
+          "name": "拉塔索姆 秘法之眼部门",
+          "nameEn": "Rata Sum: Arcane Eye",
+          "active": true,
+          "waypoints": "[&BJAEAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        },
+        {
+          "id": 2,
+          "name": "废墟原野 防御者之地",
+          "nameEn": "Fields of Ruin: Defender Field",
+          "active": true,
+          "waypoints": "[&BDYEAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        },
+        {
+          "id": 3,
+          "name": "霍布雷克 霍斯贝尔的歇脚地",
+          "nameEn": "Hoelbrak: Hosbrak's Homestead",
+          "active": true,
+          "waypoints": "[&BHsDAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        },
+        {
+          "id": 4,
+          "name": "度量领域 拉纳着陆点设施传送点",
+          "nameEn": "Metrica: Rana Landing",
+          "active": true,
+          "waypoints": "[&BEMAAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        },
+        {
+          "id": 5,
+          "name": "女王谷 雄心林地",
+          "nameEn": "Queensdale: Ojon Lumbermill",
+          "active": true,
+          "waypoints": "[&BIoGAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        },
+        {
+          "id": 6,
+          "name": "阿什福德平原 拉米亚泥沼",
+          "nameEn": "Plains of Ashford: Lamia Mire",
+          "active": true,
+          "waypoints": "[&BMgDAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        },
+        {
+          "id": 7,
+          "name": "马尔科之跃 雕塑家的终点",
+          "nameEn": "Malchor's Leap: Sculptor's End",
+          "active": true,
+          "waypoints": "[&BJECAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        },
+        {
+          "id": 8,
+          "name": "黑烟壁垒 风暴号角的凯歌",
+          "nameEn": "Black Citadel: Stormcaller Triumph",
+          "active": true,
+          "waypoints": "[&BKIDAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        },
+        {
+          "id": 9,
+          "name": "甘达拉战区 石鱼海滩",
+          "nameEn": "Gendarran Fields: Stonefish Beach",
+          "active": true,
+          "waypoints": "[&BHoAAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        },
+        {
+          "id": 10,
+          "name": "圣林之地 卡勒顿小径",
+          "nameEn": "The Grove: Caledon Path",
+          "active": true,
+          "waypoints": "[&BBIEAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        },
+        {
+          "id": 11,
+          "name": "裂脊草原 卡伦达之地传送点",
+          "nameEn": "Blazeridge Steppes: Gladefall",
+          "active": true,
+          "waypoints": "[&BAECAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        },
+        {
+          "id": 12,
+          "name": "布里斯班野地 以太电站实验室",
+          "nameEn": "Brisban Wildlands: Thaumacore Inquiry",
+          "active": true,
+          "waypoints": "[&BGYAAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        },
+        {
+          "id": 13,
+          "name": "罗纳通道 错河谷",
+          "nameEn": "Lornar's Pass: False River Valley",
+          "active": true,
+          "waypoints": "[&BDEHAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        },
+        {
+          "id": 14,
+          "name": "底耶沙高地 阿克维安丘陵",
+          "nameEn": "Diessa Plateau: Acervian Valley",
+          "active": true,
+          "waypoints": "[&BKEBAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        },
+        {
+          "id": 15,
+          "name": "甘达拉战区 丰饶之地传送点",
+          "nameEn": "Gendarran Fields: Cornucopian Fields",
+          "active": true,
+          "waypoints": "[&BOMAAAA=]",
+          "color": [
+            255,
+            116,
+            116
+          ]
+        }
+      ],
+      "partial": [],
+      "pattern": [],
+      "rotation": "zeghai-2018-05-10"
+    }
+  ]
+}

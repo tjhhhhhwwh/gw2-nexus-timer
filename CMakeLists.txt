@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-project(gw2_nexus_timer VERSION 0.1.1 LANGUAGES CXX)
+project(gw2_nexus_timer VERSION 0.1.5 LANGUAGES CXX)
 set(GW2_TIMER_GITHUB_REPOSITORY "tjhhhhhwwh/gw2-nexus-timer" CACHE STRING "Optional owner/repository for Nexus GitHub Releases updates")
 if(GW2_TIMER_GITHUB_REPOSITORY AND NOT GW2_TIMER_GITHUB_REPOSITORY MATCHES "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")
     message(FATAL_ERROR "GW2_TIMER_GITHUB_REPOSITORY must be owner/repository")
@@ -8,6 +8,10 @@ endif()
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+if(MSVC)
+    # Ship one DLL without requiring a separately installed VC++ runtime.
+    set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+endif()
 
 find_package(Python3 REQUIRED COMPONENTS Interpreter)
 set(BOSS_IMAGE_HEADER "${CMAKE_CURRENT_BINARY_DIR}/generated/boss_images.generated.h")
@@ -15,11 +19,11 @@ file(GLOB BOSS_IMAGE_FILES CONFIGURE_DEPENDS "${CMAKE_CURRENT_SOURCE_DIR}/assets
 add_custom_command(OUTPUT "${BOSS_IMAGE_HEADER}"
     COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tools/embed_boss_images.py"
             --output "${BOSS_IMAGE_HEADER}"
-    DEPENDS tools/embed_boss_images.py data/bosses.json ${BOSS_IMAGE_FILES}
+    DEPENDS tools/embed_boss_images.py data/bosses.json assets/miniapp/entry.jpg ${BOSS_IMAGE_FILES}
     VERBATIM)
 add_custom_target(embed_boss_images DEPENDS "${BOSS_IMAGE_HEADER}")
 
-add_library(timer_core STATIC src/schedule.cpp)
+add_library(timer_core STATIC src/schedule.cpp src/event_schedule.cpp)
 target_include_directories(timer_core PUBLIC src)
 if(MSVC)
     target_compile_options(timer_core PUBLIC /utf-8 /W4)
@@ -32,6 +36,10 @@ if(BUILD_TESTING)
     add_executable(schedule_tests tests/schedule_tests.cpp)
     target_link_libraries(schedule_tests PRIVATE timer_core)
     add_test(NAME schedule_tests COMMAND schedule_tests)
+    add_executable(event_schedule_tests tests/event_schedule_tests.cpp)
+    target_link_libraries(event_schedule_tests PRIVATE timer_core)
+    add_test(NAME event_schedule_tests COMMAND event_schedule_tests)
+    add_test(NAME event_data_check COMMAND "${Python3_EXECUTABLE}" "${CMAKE_CURRENT_SOURCE_DIR}/tools/generate_events.py" --check)
     add_executable(boss_images_tests tests/boss_images_tests.cpp)
     add_dependencies(boss_images_tests embed_boss_images)
     target_include_directories(boss_images_tests PRIVATE "${CMAKE_CURRENT_BINARY_DIR}/generated")

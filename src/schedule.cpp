@@ -39,6 +39,39 @@ std::vector<Occurrence> Upcoming(const std::vector<Boss>& bosses, std::int64_t n
     return result;
 }
 
+Occurrence PreviousOccurrence(const Boss& boss, std::int64_t now) {
+    if (boss.minutes.empty()) throw std::invalid_argument("Boss has no scheduled times");
+    const auto day = BeijingDayStart(now);
+    std::int64_t previous = day - kDaySeconds * 2;
+    for (const int minute : boss.minutes) {
+        if (minute < 0 || minute >= 1440) throw std::invalid_argument("Invalid schedule minute");
+        auto start = day + minute * 60;
+        if (start > now) start -= kDaySeconds;
+        previous = std::max(previous, start);
+    }
+    return {&boss, previous};
+}
+
+std::vector<CardOccurrence> CardOccurrences(const std::vector<Boss>& bosses, std::int64_t now) {
+    std::vector<CardOccurrence> result;
+    result.reserve(bosses.size());
+    for (const auto& boss : bosses) {
+        const auto previous = PreviousOccurrence(boss, now);
+        // At an exact start, "previous" is the start just reached, and "next"
+        // must point to the following start rather than the same occurrence.
+        result.push_back({previous, NextOccurrence(boss, now + 1),
+                          now - previous.starts_at < kRecentDisplaySeconds});
+    }
+    std::sort(result.begin(), result.end(), [](const auto& a, const auto& b) {
+        if (a.recent != b.recent) return a.recent;
+        const auto a_time = a.recent ? a.previous.starts_at : a.next.starts_at;
+        const auto b_time = b.recent ? b.previous.starts_at : b.next.starts_at;
+        if (a_time != b_time) return a_time < b_time;
+        return a.next.boss->id < b.next.boss->id;
+    });
+    return result;
+}
+
 std::string ClockText(std::int64_t now) {
     const auto seconds = now - BeijingDayStart(now);
     char text[16];
@@ -56,9 +89,10 @@ const std::string& MapName(const Boss& boss, Language language) {
 }
 
 std::string DayLabel(std::int64_t starts_at, std::int64_t now, Language language) {
-    const bool today = BeijingDayStart(starts_at) == BeijingDayStart(now);
-    if (language == Language::EN) return today ? "Today" : "Tomorrow";
-    return today ? u8"今天" : u8"明天";
+    const auto day = BeijingDayStart(starts_at);
+    const auto today = BeijingDayStart(now);
+    if (language == Language::EN) return day < today ? "Yesterday" : day == today ? "Today" : "Tomorrow";
+    return day < today ? u8"昨天" : day == today ? u8"今天" : u8"明天";
 }
 
 std::string Countdown(std::int64_t seconds) {

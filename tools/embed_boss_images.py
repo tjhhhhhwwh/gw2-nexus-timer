@@ -31,7 +31,15 @@ def generate(output):
     for boss in bosses:
         key = boss["id"]
         lines.append('    {"' + key + '", image_' + key + ', sizeof(image_' + key + ')},')
-    lines.extend(["}};", "} // namespace world_timer", ""])
+    lines.append("}};")
+    miniapp = (ROOT / "assets/miniapp/entry.jpg").read_bytes()
+    if not miniapp.startswith(b"\xff\xd8\xff") or not miniapp.endswith(b"\xff\xd9"):
+        raise ValueError("Invalid mini-program code JPEG")
+    lines.append("inline constexpr unsigned char image_miniapp[] = {")
+    for start in range(0, len(miniapp), 24):
+        lines.append("    " + ",".join(str(b) for b in miniapp[start:start + 24]) + ",")
+    lines.extend(["};", 'inline constexpr BossImage kMiniAppCode = {"miniapp", image_miniapp, sizeof(image_miniapp)};',
+                  "} // namespace world_timer", ""])
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text("\n".join(lines), encoding="utf-8")
 

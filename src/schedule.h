@@ -26,10 +26,20 @@ struct Occurrence {
     std::int64_t starts_at;
 };
 
+// A display window after a scheduled start, never live map-instance status.
+constexpr std::int64_t kRecentDisplaySeconds = 15 * 60;
+struct CardOccurrence {
+    Occurrence previous;
+    Occurrence next;
+    bool recent;
+};
+
 const std::vector<Boss>& Bosses();
 const char* SnapshotDate();
 std::int64_t BeijingDayStart(std::int64_t unix_seconds);
 Occurrence NextOccurrence(const Boss& boss, std::int64_t now);
+Occurrence PreviousOccurrence(const Boss& boss, std::int64_t now);
+std::vector<CardOccurrence> CardOccurrences(const std::vector<Boss>& bosses, std::int64_t now);
 std::vector<Occurrence> Upcoming(const std::vector<Boss>& bosses, std::int64_t now);
 std::string ClockText(std::int64_t unix_seconds);
 const std::string& BossName(const Boss& boss, Language language);

@@ -13,6 +13,7 @@ args = parser.parse_args()
 if args.github_repository and not re.fullmatch(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+", args.github_repository):
     parser.error("GitHub repository must be owner/repository")
 subprocess.run(["python3", "tools/generate_data.py", "--check"], cwd=ROOT, check=True)
+subprocess.run(["python3", "tools/generate_events.py", "--check"], cwd=ROOT, check=True)
 (ROOT / "dist").mkdir(exist_ok=True)
 subprocess.run(["python3", "tools/embed_boss_images.py", "--output",
                 "build/generated/boss_images.generated.h"], cwd=ROOT, check=True)
@@ -22,7 +23,7 @@ command = ["uv", "run", "--no-project", "--with", "ziglang==0.14.1", "python", "
            "-Ibuild/generated"]
 if args.github_repository:
     command.append('-DGW2_TIMER_GITHUB_URL="https://github.com/' + args.github_repository + '"')
-command.extend(["src/addon.cpp", "src/clipboard_win.cpp", "src/schedule.cpp",
+command.extend(["src/addon.cpp", "src/clipboard_win.cpp", "src/schedule.cpp", "src/event_schedule.cpp",
                 "third_party/imgui/imgui.cpp", "third_party/imgui/imgui_draw.cpp",
                 "third_party/imgui/imgui_tables.cpp", "third_party/imgui/imgui_widgets.cpp",
                 "-luser32", "-o", "dist/gw2_nexus_timer.dll"])
